@@ -71,7 +71,7 @@ class AppBarWidget extends StatelessWidget {
                   child: Image.network(
                     'https://random.imagecdn.app/150/150',
                   ),
-                )
+                ),
               ],
             ),
           ),

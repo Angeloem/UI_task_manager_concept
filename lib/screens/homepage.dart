@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/home.dart';
 import '../widgets/nav_bar.dart';
+import '../widgets/per_day.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final List<Widget> screens = [
     const Home(),
-    Container(),
+    const PerDayScreen(),
     Container(),
     Container(),
   ];
