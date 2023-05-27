@@ -65,7 +65,8 @@ class _PerDayScreenState extends State<PerDayScreen> {
                         ),
                         clipBehavior: Clip.hardEdge,
                         child: Image.network(
-                          'https://random.imagecdn.app/150/150',
+                          '${baseImages}150/150',
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ],
@@ -100,7 +101,7 @@ class _PerDayScreenState extends State<PerDayScreen> {
                               decoration: BoxDecoration(
                                 image: const DecorationImage(
                                   image: AssetImage(
-                                    'assets/images/background.png',
+                                    'assets/images/background.jpg',
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -170,9 +171,10 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                           ClipOval(
                                             clipBehavior: Clip.hardEdge,
                                             child: Image.network(
-                                              'https://random.imagecdn.app/150/150',
+                                              '${baseImages}150/150',
                                               height: 50,
                                               width: 50,
+                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                           Positioned(
@@ -186,9 +188,10 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                                 shape: BoxShape.circle,
                                               ),
                                               child: Image.network(
-                                                'https://random.imagecdn.app/149/149',
+                                                '${baseImages}200/300',
                                                 height: 50,
                                                 width: 50,
+                                                fit: BoxFit.cover,
                                               ),
                                             ),
                                           ),
@@ -197,9 +200,10 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                             child: ClipOval(
                                               clipBehavior: Clip.hardEdge,
                                               child: Image.network(
-                                                'https://random.imagecdn.app/151/151',
+                                                '${baseImages}160/160',
                                                 height: 50,
                                                 width: 50,
+                                                fit: BoxFit.cover,
                                               ),
                                             ),
                                           ),
@@ -313,7 +317,7 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                   //         ClipOval(
                                   //           clipBehavior: Clip.hardEdge,
                                   //           child: Image.network(
-                                  //             'https://random.imagecdn.app/150/150',
+                                  //             '${baseImages}150/150',
                                   //             height: 50,
                                   //             width: 50,
                                   //           ),
@@ -329,7 +333,7 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                   //               shape: BoxShape.circle,
                                   //             ),
                                   //             child: Image.network(
-                                  //               'https://random.imagecdn.app/149/149',
+                                  //               '${baseImages}149/149',
                                   //               height: 50,
                                   //               width: 50,
                                   //             ),
@@ -340,7 +344,7 @@ class _PerDayScreenState extends State<PerDayScreen> {
                                   //           child: ClipOval(
                                   //             clipBehavior: Clip.hardEdge,
                                   //             child: Image.network(
-                                  //               'https://random.imagecdn.app/151/151',
+                                  //               '${baseImages}151/151',
                                   //               height: 50,
                                   //               width: 50,
                                   //             ),

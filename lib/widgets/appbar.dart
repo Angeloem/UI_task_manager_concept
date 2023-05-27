@@ -18,7 +18,7 @@ class AppBarWidget extends StatelessWidget {
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage(
-                  'assets/images/background.png',
+                  'assets/images/background.jpg',
                 ),
                 fit: BoxFit.cover,
               ),
@@ -69,7 +69,7 @@ class AppBarWidget extends StatelessWidget {
                   ),
                   clipBehavior: Clip.hardEdge,
                   child: Image.network(
-                    'https://random.imagecdn.app/150/150',
+                    '${baseImages}150/150',
                   ),
                 ),
               ],

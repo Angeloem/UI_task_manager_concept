@@ -20,7 +20,12 @@ class _DateSlideWidgetState extends State<DateSlideWidget> {
     SchedulerBinding.instance.addPostFrameCallback((timeStamp) {
       Future.delayed(const Duration(milliseconds: 300)).then((value) {
         if (_selectedWidgetKey != null) {
-          Scrollable.ensureVisible(_selectedWidgetKey!.currentContext!, duration: const Duration(milliseconds: 300), alignment: .5);
+          Scrollable.ensureVisible(
+            _selectedWidgetKey!.currentContext!,
+            duration: const Duration(milliseconds: 300),
+            alignment: .5,
+            curve: Curves.bounceInOut,
+          );
         }
       });
     });
